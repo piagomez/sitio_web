@@ -4,7 +4,7 @@
        bo-class="{'col s3':  !vm.isMobile, 'col s12': vm.isMobile}">
     <!-- TABLET/DESKTOP NAV --> 
     <div bindonce bo-if="!vm.isMobile">
-      <ul class="side-nav fixed">
+      <ul class="side-nav fixed col s2">
         <li class="logo-container">
           <a id="logo-container" href="http://materializecss.com/" class="brand-logo">
 
@@ -22,7 +22,7 @@
         </li>
 
         <hr>
-        <li class="bold" ng-click="vm.goToState('app.portfolio')"><i class="Tiny material-icons assignment">assignment</i> <strong>Portafolio</strong></li>
+        <li class="bold" ng-click="vm.goToState('app.portfolio')" onclick=""><i class="Tiny material-icons assignment">assignment</i> <strong>Portafolio</strong></li>
         <li class="bold" ng-click="vm.goToState('app.about')"><i class="Tiny material-icons assignment_ind">assignment_ind</i> <strong>Somos</strong></li>
       </ul>
     </div>
@@ -51,7 +51,7 @@
     </div>
   </div>
   
-  <div bindonce bo-class="{'col s9 offset-s3 container':  !vm.isMobile, 'col s12': vm.isMobile}">
+  <div bindonce bo-class="{'col s10 offset-s2':  !vm.isMobile, 'col s12': vm.isMobile}">
     <!-- TABLET/DESKTOP VIEW -->
     <div bindonce bo-if="!vm.isMobile">
       <ui-view></ui-view>

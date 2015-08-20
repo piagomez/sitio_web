@@ -1,3 +1,19 @@
-<div ng-controller="AboutController as vm">
-  <h1 ng-bind="vm.title"></h1>
+<div id="about" ng-controller="AboutController as vm">
+  <script>
+  $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  </script>
+  <div class="parallax-container">
+  	<h1 ng-bind="vm.title"></h1>
+  	<p>Ingeniera Informática</p>
+    <div class="parallax"><img src="./images/unnamed.gif"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h3 class="header">Mi historia</h3>
+      <!-- <p class="grey-text text-darken-3 lighten-3">Estudié programación en  </p> -->
+      <iframe src='https://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=1HBbQ9dZJFVZN1-pYdY33XbF8lkuponKY907qg7F_6r4&font=Bevan-PotanoSans&maptype=toner&lang=es&start_at_end=true&start_zoom_adjust=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+    </div>
+  </div>
 </div>

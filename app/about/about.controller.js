@@ -11,7 +11,7 @@
   function Controller() {
     
     var vm = this;
-    vm.title = 'About';
+    vm.title = 'Sobre mi';
     activate();
     
     ///////FUNCIONES PRIVADAS/////////
